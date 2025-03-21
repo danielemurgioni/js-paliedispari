@@ -5,6 +5,12 @@ Palindroma:
 
 Chiedere all’utente di inserire una parola Creare una funzione per capire se la parola inserita è palindroma
 
+Palindroma, sotto-problema:
+
+(inputWord) - Inizializzo una variabile [LET] e le assegno [=] [PROMPT];
+
+(palindromeWord) - Dichiaro una [function] che deve invertire la parola inserità in (inputWord); [IF] Se la parola inserità (inputWord) è uguale [==] alla parola invertita [{}] allora stampo[console.log] un messaggio ["La_parola_è_palindroma"]; [ELSE] Altrimenti stampo un messaggio [La_parola_non_è_palindroma].
+
 Pari e Dispari:
 
 L’utente sceglie pari o dispari e inserisce un numero da 1 a 5. Generiamo un numero random (sempre da 1 a 5) per il computer (usando una funzione). Sommiamo i due numeri Stabiliamo se la somma dei due numeri è pari o dispari (usando una funzione) Dichiariamo chi ha vinto.
