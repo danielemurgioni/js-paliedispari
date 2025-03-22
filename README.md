@@ -9,7 +9,7 @@ Palindroma, sotto-problema:
 
 (inputWord) - Inizializzo una variabile [LET] e le assegno [=] [PROMPT];
 
-(palindromeWord) - Dichiaro una [function] che deve invertire la parola inserità in (inputWord); [IF] Se la parola inserità (inputWord) è uguale [==] alla parola invertita [{}] allora stampo[console.log] un messaggio ["La_parola_è_palindroma"]; [ELSE] Altrimenti stampo un messaggio [La_parola_non_è_palindroma].
+palindromeWord(word) - Dichiaro una [function] per controllare se una parola è palindroma, con [FOR] devo invertire una parola (word), [IF] Se la parola (word) è uguale [==] alla parola invertita (result) allora stampo[console.log] un messaggio ["La_parola_è_palindroma"], [ELSE] Altrimenti stampo un messaggio [La_parola_non_è_palindroma].
 
 Pari e Dispari:
 
