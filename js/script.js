@@ -35,6 +35,11 @@ function checkEvenOrOdd(check){
     console.log(even, odd)
 }
 
+function randomNumber(min, max){
+    let number = Math.floor(Math.random() * (max - min) + min);
+    return number;
+}
+
 //Functions-end
 
 let playerEvenOrOdd = prompt("Scegli Pari o Dispari");
