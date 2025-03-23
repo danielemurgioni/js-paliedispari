@@ -15,6 +15,8 @@
 
 /* -------------------- */
 
+//Functions-start
+
 function checkEvenOrOdd(check){
     let even = false;
     let odd = false;
@@ -33,6 +35,12 @@ function checkEvenOrOdd(check){
     console.log(even, odd)
 }
 
+//Functions-end
+
 let playerEvenOrOdd = prompt("Scegli Pari o Dispari");
 
 let playerChoiceCheck = checkEvenOrOdd(playerEvenOrOdd);
+
+let playerNumber = parseInt(prompt("Inserisci un numero da 1 a 5"));
+
+console.log(`Il numero scelto è ${playerNumber}`);
