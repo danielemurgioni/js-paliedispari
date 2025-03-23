@@ -49,3 +49,7 @@ let playerChoiceCheck = checkEvenOrOdd(playerEvenOrOdd);
 let playerNumber = parseInt(prompt("Inserisci un numero da 1 a 5"));
 
 console.log(`Il numero scelto è ${playerNumber}`);
+
+let computerNumber = randomNumber(1, 5);
+
+console.log(`Il numero del computer è ${computerNumber}`);
