@@ -40,6 +40,17 @@ function randomNumber(min, max){
     return number;
 }
 
+function sumEvenOrOdd(x, y){
+    let sum = x + y;
+    
+    if(sum % 2 == 0){
+        console.log(`La somma è pari: ${sum}`)
+    }
+    else{
+        console.log(`La somma è dispari: ${sum}`)
+    }
+}
+
 //Functions-end
 
 let playerEvenOrOdd = prompt("Scegli Pari o Dispari");
@@ -53,3 +64,5 @@ console.log(`Il numero scelto è ${playerNumber}`);
 let computerNumber = randomNumber(1, 5);
 
 console.log(`Il numero del computer è ${computerNumber}`);
+
+let numberSum = sumEvenOrOdd(playerNumber, computerNumber);
