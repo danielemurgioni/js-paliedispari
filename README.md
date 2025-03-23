@@ -15,6 +15,18 @@ Pari e Dispari:
 
 L’utente sceglie pari o dispari e inserisce un numero da 1 a 5. Generiamo un numero random (sempre da 1 a 5) per il computer (usando una funzione). Sommiamo i due numeri Stabiliamo se la somma dei due numeri è pari o dispari (usando una funzione) Dichiariamo chi ha vinto.
 
+Pari e Dispari, sotto-problema:
+
+(playerEvenOrOdd) - Inizializzo una variabile [LET] e le assegno [=] un [PROMPT] dove il giocatore sceglie pari o dispari;
+
+(playerNumber) - Inizializzo una variabile [LET] e le assegno [=] un [PROMPT] dove il giocatore sceglie un numero da 1 a 5;
+
+randomNumber(min, max) - Dichiaro una [function] per generare un numero random da [min] a [max];
+
+sumEvenOrOdd(x, y) - Dichiaro una [function], in cui sommo [+] x con y, [IF] se il risultato è pari allora stampo [La_somma_è_pari], [ELSE] altrimenti il risultato è dispari allora stampo [La_somma_è_dispari].
+
+Chi ha vinto? [IF] Se l'utente ha scelto pari [&&] la somma è pari, oppure [||] la somma è dispari [&&] l'utente ha scelto dispari allora stampo [Hai_vinto!], [ELSE] altrimenti stampo [Hai_Perso!].
+
 Numero minimo di push: 7
 
 Consigli del giorno:
