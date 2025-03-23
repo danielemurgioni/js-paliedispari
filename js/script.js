@@ -16,23 +16,17 @@
 /* -------------------- */
 
 //Functions-start
+function checkEvenOrOdd(choice){
 
-function checkEvenOrOdd(check){
-    let even = false;
-    let odd = false;
-
-    if(check.includes("Dispari") || check.includes("dispari")){
-    odd = true;
+    if(choice.includes("DISPARI")){
     console.log("Hai scelto Dispari")
     }
-    else if(check.includes("Pari") || check.includes("pari")){
-    even = true;
+    else if(choice.includes("PARI")){
     console.log("Hai scelto Pari")
     }
     else{
     console.log("Scelta errata, riprova")
     }
-    console.log(even, odd)
 }
 
 function randomNumber(min, max){
@@ -40,20 +34,23 @@ function randomNumber(min, max){
     return number;
 }
 
-function sumEvenOrOdd(x, y){
+function sumEvenOrOdd(x, y, check){
     let sum = x + y;
-    
+
     if(sum % 2 == 0){
+        check = "PARI"
         console.log(`La somma è pari: ${sum}`)
     }
     else{
+        check = "DISPARI"
         console.log(`La somma è dispari: ${sum}`)
     }
-}
 
+    return sum, check;
+}
 //Functions-end
 
-let playerEvenOrOdd = prompt("Scegli Pari o Dispari");
+let playerEvenOrOdd = prompt("Scegli Pari o Dispari").toUpperCase();
 
 let playerChoiceCheck = checkEvenOrOdd(playerEvenOrOdd);
 
@@ -66,3 +63,10 @@ let computerNumber = randomNumber(1, 5);
 console.log(`Il numero del computer è ${computerNumber}`);
 
 let numberSum = sumEvenOrOdd(playerNumber, computerNumber);
+
+if(playerEvenOrOdd == numberSum){
+    console.log("Hai vinto!")
+}
+else{
+    console.log("Hai perso!")
+}
